@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
+    libsystem_server \
     setup_fs
 
 # Hostapd

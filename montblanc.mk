@@ -4,8 +4,6 @@ $(call inherit-product, device/sony/montblanc-common/recovery/recovery.mk)
 
 $(call inherit-product-if-exists, vendor/sony/montblanc-common/montblanc-common-vendor.mk)
 
-$(call inherit-product-if-exists, vendor/PolishBloodProject/common_PolishBlood.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/sony/montblanc-common/overlay
 
 # Permissions
@@ -56,6 +54,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libasound_module_ctl_bluetooth \
     libasound_module_pcm_bluetooth
+    
+# Unofficial packages that I used from trees outside AOSP
+PRODUCT_PACKAGES += \
+    CMFileManager \
+    Stk \
+    Apollo \
+    Superuser \
+    su \
+    DSPManager \
+    libcyanogen-dsp 
 
 # light package
 PRODUCT_PACKAGES += \

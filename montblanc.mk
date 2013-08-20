@@ -4,6 +4,8 @@ $(call inherit-product, device/sony/montblanc-common/recovery/recovery.mk)
 
 $(call inherit-product-if-exists, vendor/sony/montblanc-common/montblanc-common-vendor.mk)
 
+$(call inherit-product-if-exists, vendor/PolishBloodProject/common_PolishBlood.mk)
+
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/montblanc-common/overlay
 
